@@ -24,7 +24,7 @@ public class EquacaoQuadratica {
 		}else if (delta == 0) {
 		System.out.println("Possui uma raizes");
 	}else {
-		System.out.println("Não Possui  raizes");
+		System.out.println("Não Possui raizes");
 	}
 		
 	}
