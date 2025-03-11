@@ -1,7 +1,6 @@
 package interfaceGrafica;
 
 import javax.swing.*;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;  
 
@@ -12,7 +11,8 @@ public class CalculadoraJ implements ActionListener {
 	//Criação do botão
 	JButton botaoSoma,botaoSubtracao;
 	//
-   
+	
+
 	CalculadoraJ(){
 		//Criação de um frame(Quadro)
 		JFrame quadroPrincipal = new JFrame();
@@ -24,13 +24,14 @@ public class CalculadoraJ implements ActionListener {
 		campoTexto03.setBounds(50,150,150,20);
 		
 		//campoTexto03 NÃO pode ser editado ou preenchido.
+		
 		campoTexto03.setEditable(false);
 		
 		//Instanciação dos botões e inserção dos botões no Frame. 
 		botaoSoma = new JButton("+");
 		botaoSoma.setBounds(50,200,50,50);
 		botaoSubtracao = new JButton("-");
-		botaoSubtracao.setBounds(50,200,50,50);
+		botaoSubtracao.setBounds(120,200,50,50);
 		
 		//Adicionando evendo ao botão
 		// this = acão
@@ -73,27 +74,21 @@ public class CalculadoraJ implements ActionListener {
 		if(e.getSource() == botaoSoma) {			
 			resultado=numero01+numero02;
 		}else if(e.getSource() == botaoSubtracao) {
-			resultado=numero01+numero02;					
+			resultado=numero01-numero02;					
 		}
 		
 		//converter o resultado inteiro para string 
 		
 		String resultadoFinal = String.valueOf(resultado);
-		
-		
-		
-		
-		
+			
+			campoTexto03.setText(resultadoFinal);
+	
 		}
+	  public static void main(String[]args) {
 		
-	
-	
-	
-	
-	
-		  
-		  
-	  }
-	
-	
+		  new CalculadoraJ();
+		  }
 }
+		    
+	  
+	
