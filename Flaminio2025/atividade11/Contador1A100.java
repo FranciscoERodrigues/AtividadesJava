@@ -10,8 +10,8 @@ public class Contador1A100 {
 	
 		for(int contador = 1; contador <101;contador ++) {
 		
-		acumuladora += contador;
-			
+		acumuladora = acumuladora + contador;
+
 		System.out.println(acumuladora);
 		
 		
