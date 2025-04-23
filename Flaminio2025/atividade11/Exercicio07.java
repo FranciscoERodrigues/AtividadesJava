@@ -8,7 +8,7 @@ public class Exercicio07 {
 		
 		int contador = 0;
 		
-		for (int i = 0; i < 51; i++) {
+		for (int i = 1; i < 51; i++) {
 			
 			if(i%3==0) {
 				
