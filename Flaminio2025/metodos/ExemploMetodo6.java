@@ -15,9 +15,6 @@ public class ExemploMetodo6 {
 			
 		}
 		
-		
-		
-		
 	}
 
 	public static void main(String[] args) {
