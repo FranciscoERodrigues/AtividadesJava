@@ -3,13 +3,13 @@ package metodos;
 public class ExemploMetodo8 {
 
 	
-	static int myMethod(int x, int y) {
-	    return x + y;
+	public static int metodos(int numero1, int numero2 ) {
+	    return numero1 + numero2;
 	  }
 	
 	public static void main(String[] args) {
 	
-		  System.out.println(myMethod(5,3));
+		  System.out.println(metodos(10,10));
 
 	}
 
