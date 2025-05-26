@@ -1,4 +1,4 @@
-package lista02;
+package atividade2;
 
 import java.util.Scanner;
 
